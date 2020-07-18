@@ -1,5 +1,7 @@
 import numpy as np
-data = np.genfromtxt('data.txt',delimiter=",",dtype=float64)
+import os
+print(os.environ['PATH'])
+data = np.genfromtxt('data.txt',delimiter=",",dtype=float)
 print(type(data))
 print(data)
 # print(help())
