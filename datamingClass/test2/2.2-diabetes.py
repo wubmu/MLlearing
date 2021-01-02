@@ -32,7 +32,7 @@ param_grid = {'C': [1e-3, 1e-2, 1e-1, 1, 10, 100, 1000],
             'kernel':('linear','rbf',),
               }
 
-grid_search = GridSearchCV(clf1, param_grid, n_jobs = 8, verbose=1)
+grid_search = GridSearchCV(clf1, param_grid, n_jobs = 8, verbose=1,scoring='f1')
 
 grid_search.fit(X_train, y_train)
 print("The best parameters are %s with a score of %0.2f"
