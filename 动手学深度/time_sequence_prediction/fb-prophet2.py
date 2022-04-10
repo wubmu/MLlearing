@@ -3,7 +3,7 @@ import numpy as np
 from fbprophet import Prophet
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('D:\\code\\pyproject\\MLlearing\\pytorchDemo\\time_sequence_prediction\\examples\\example_air_passengers.csv')
+df = pd.read_csv('/动手学深度\\time_sequence_prediction\\examples\\example_air_passengers.csv')
 df['y'] = np.log(df['y'])
 df.head()
 m = Prophet(growth="linear", n_changepoints=0,
